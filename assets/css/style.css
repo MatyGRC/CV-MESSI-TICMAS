@@ -1,0 +1,103 @@
+#section-inicio {
+    width: 100%;
+    height: 100vh;
+    background: url("../lionel-messi-football-barcelona-hd-wallpaper-preview2.jpg") center;
+    background-size: cover;
+}
+
+#section-logros {
+    width: 100%;
+    height: 60vh;
+    background: url("../messi-palmares.jpg") center;
+    background-size: cover;
+}
+
+.barcelona-fc {
+    background: url("../barc-banner.png") center right;
+}
+
+.psg {
+    background: url("../psg-bann.png")center;
+    background-size: cover;
+}
+
+.arg {
+    background: url("../arg-ban.png") center;
+}
+
+.text-inicio {
+    transition: transform .2s;
+}
+
+.text-inicio:hover {
+    transform: scale(1.5);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+}
+
+.card{
+    border-radius: 4px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  cursor: pointer;
+}
+
+.card:hover{
+     transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+/* .footer {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    text-align: right;
+    font-size: 13px;
+    color: #fff;
+    z-index: 999999;
+  } */
+
+.footer a {
+    transition: 0.3s;
+  }
+  
+.footer a:hover {
+    color: #18d26e;
+  }
+
+.btn-back-to-top {
+    display: none;
+} 
+
+@media (max-width: 768px) {
+    .nav-div {
+        flex-direction: column;
+    }
+    .text-inicio {
+        margin-top: 250px
+    }
+    #barcelona-fc, #psg, #arg {
+        background-size: contain;
+    }
+}
+
+@media (max-width: 425px) {
+    .card-img-top {
+        height: 60vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+      position: relative;
+      text-align: center;
+      padding: 10px;
+      background: rgba(101, 100, 100, 0.236);
+    }
+}
