@@ -83,7 +83,9 @@
       
                 <div class="col-lg-8 mt-5 mt-lg-0">
       
-                  <form method="post" role="form">
+                  <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="12e9b22b-f5de-4727-a96e-cf176ee4fa2d">
+
                     <div class="row">
                         <p>En este simple formulario dejo la posibilidad de enviar un mensaje a mi amigo personal, el cual se encargó de crear mi cv web con gran esfuerzo y cariño, y el que me comunicará si en los mensajes enviados surge una mejor oferta laboral a la que actualmente tengo 🤑</p>
                       <div class="col-md-6 form-group">
@@ -97,8 +99,10 @@
                       <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
                     </div>
                     <div class="form-group mt-3">
-                      <textarea class="form-control" name="message" rows="5" placeholder="Deja tu mensaje..." required></textarea>
+                      <textarea class="form-control" id="message" name="message" rows="5" placeholder="Deja tu mensaje..." required></textarea>
                     </div>
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
                     <div class="text-center"><button type="submit" class="btn btn-success m-3">Enviar mensaje</button></div>
                   </form>
       
@@ -124,6 +128,8 @@
         AOS.init();
       </script>
           <script src="./assets/js/main.js"></script>
+          <script src="https://smtpjs.com/v3/smtp.js">
+          </script>
 
 </body>
 </html>
